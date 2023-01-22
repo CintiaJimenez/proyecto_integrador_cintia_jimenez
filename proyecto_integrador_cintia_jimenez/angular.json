@@ -25,11 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "proyecto_integrador_cintia_jimenez/node_modules/bootstrap/dist/css/bootstrap.rtl.css"
+              "src/styles.css"
+              
             ],
             "scripts": [
-              "proyecto_integrador_cintia_jimenez/node_modules/bootstrap/dist/js/bootstrap.js"
+              
             ]
           },
           "configurations": {
