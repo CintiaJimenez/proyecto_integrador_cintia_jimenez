@@ -4,6 +4,13 @@
 div{
     background: #c9c9c9;
 }
-h1,h3{
+h1,h2,h3{
     display: inline;
+    
+}
+h1, h2{
+    display: inline;
+    text-align: center;
+    box-shadow: 10px 10px 30px #f8f6f6;
+    box-shadow: ejeX ejeY difumasion color;
 }
