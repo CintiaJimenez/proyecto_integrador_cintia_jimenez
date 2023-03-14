@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*...corregir este align items porque hace que se vaya para cualquier lado los iconos...*/
+
+
+.redes{
+    margin-right: 0.5em;
+}
+
+#logoAP{
+    width: 150px;
+}
+img{
+    width: 50px;
+}
+.btn{
+    border-width: medium;
+}
+/*... vista celular...*/
+@media (max-width: 575px ){
+.container{
+    flex-direction: column;
+    }
+.redes{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    }
+.redes img{
+    margin:0.2em;
+    }
+    
+}
+ 

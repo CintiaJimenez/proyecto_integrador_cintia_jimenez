@@ -17,24 +17,24 @@ p{
     box-shadow: ejeX ejeY difumasion color;
 }
 /*Estilo de la foto de perfil*/
-@media(min-width:576px){
+@media(min-width:575px){
     #foto_de_perfil{
-        position:absolute;
-        width: 15%;
+        position:CENTER;
+        width: 40%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left:1%;
+        left:5%;
         top: 550px;
     }
 }
-    @media(max-width:576px){
+    @media(max-width:575px){
         #foto_de_perfil{
-            position:absolute;
-            width: 30%;
+            position:CENTER;
+            width: 45%;
             border-radius: 100%;
             box-shadow: 3px 3px 3px grey;
-            left:1%;
-            top: 630px;
+            left:33%;
+            top: 950px;
     }
 }
 
