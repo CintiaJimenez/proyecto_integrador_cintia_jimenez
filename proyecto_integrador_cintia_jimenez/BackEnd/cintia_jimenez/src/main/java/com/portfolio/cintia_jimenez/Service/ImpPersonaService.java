@@ -20,7 +20,7 @@ public class ImpPersonaService implements IPersonaService{
         List<Persona> persona = ipersonaRepository.findAll();
         return persona;
     }
-
+ 
     @Override
     public void savePersona(Persona persona) {
         ipersonaRepository.save(persona);
@@ -37,3 +37,4 @@ public class ImpPersonaService implements IPersonaService{
        Persona persona = ipersonaRepository.findById(Id).orElse(null);
        return persona;
     }
+}

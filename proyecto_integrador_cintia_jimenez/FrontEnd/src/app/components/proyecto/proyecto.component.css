@@ -12,11 +12,11 @@
 }
 .img-proyecto{
     padding: 20px;
-    box-shadow: 10px 10px 30px #000000;
+    box-shadow: 10px 10px 30px #9A616D;
     box-shadow: ejeX ejeY difumasion color;
 }
 .row, h1{
-    box-shadow: 10px 10px 30px #f8f6f6;
+    box-shadow: 10px 10px 30px #9A616D;
     box-shadow: ejeX ejeY difumasion color;
     text-align: center;
 }
