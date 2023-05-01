@@ -23,8 +23,7 @@ public class Rol {
     }
 
     public Rol(int id, RolNombre rolNombre) {
-        this.id = id;
-        this.rolNombre = rolNombre;
+              this.rolNombre = rolNombre;
     }
 
     //Getter y Setter
@@ -44,9 +43,4 @@ public class Rol {
     public void setRolNombre(RolNombre rolNombre) {
         this.rolNombre = rolNombre;
     }
-    
-    
-
-
-
 }
