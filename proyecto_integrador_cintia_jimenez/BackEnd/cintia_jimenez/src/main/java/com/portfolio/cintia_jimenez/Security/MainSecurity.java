@@ -1,4 +1,4 @@
-/*-->comparar estos codigos--
+
 package com.portfolio.cintia_jimenez.Security;
 
 import com.portfolio.cintia_jimenez.Security.Jwt.JwtEntryPoint;
@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -49,18 +50,24 @@ public class MainSecurity {
         http.cors().and().csrf().disable()
                 .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                .authorizeRequests()
-                .andMatchers("/**").permitAll()
-                .anyRequest().authenticated();
-
+                .authorizeRequests().antMatchers("/**").permitAll().anyRequest().authenticated();
+        
         http.addFilterBefore(jwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
 }
-*/
 
-package com.portfolio.cintia_jimenez.Security;
+  
+
+
+
+
+
+
+
+
+/*package com.portfolio.cintia_jimenez.Security;
 
 import com.portfolio.cintia_jimenez.Security.Jwt.JwtEntryPoint;
 import com.portfolio.cintia_jimenez.Security.Jwt.JwtTokenFilter;
@@ -70,7 +77,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -83,7 +90,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration
 @EnableWebSecurity
-@EnableMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class MainSecurity extends WebSecurityConfigurerAdapter{
     @Autowired
     UserDetailsImpl userDetailsServiceImpl;
@@ -129,3 +136,4 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
         auth.userDetailsService(userDetailsServicesImpl).passwordEncoder(passwordEncoder());
     }
 }
+*/

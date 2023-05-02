@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { NuevoUsuario } from '../model/nuevo-usuario';
 import { Observable } from 'rxjs';
 import { JwtDto } from '../model/jwt-dto';
+import { LoginUsuario } from '../model/login-usuario';
 
 @Injectable({
   providedIn: 'root'
