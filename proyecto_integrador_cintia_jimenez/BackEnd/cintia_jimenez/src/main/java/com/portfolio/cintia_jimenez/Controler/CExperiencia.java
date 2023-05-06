@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
+
     
     @GetMapping("/lista")
     public ResponseEntity<List<Experiencia>> list(){
